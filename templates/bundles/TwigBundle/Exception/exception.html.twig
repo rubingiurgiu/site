@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <p>exception.html.twig</p>
+    <div class="error-code">
+        {% if exception.message %}
+            <h1>{{ exception.message }}</h1>
+        {% endif %}
+        <h3>{{ status_text }} {{ status_code }}</h3>
+    </div>
+{% endblock %}
